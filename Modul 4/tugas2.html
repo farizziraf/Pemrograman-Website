@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="jquery-3.6.3.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// Mengaktifkan event double click pada elemen dengan class "kotak"
+			$(".kotak").dblclick(function () {
+				$(this).toggleClass("kuning"); //mengubah warna latar belakang kotak menjadi kuning atau merah
+			});
+		});
+	</script>
+
+	<!-- Mengatur tampilan kotak -->
+	<style>
+		.kotak {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			display: inline-block;
+			margin: 10px;
+		}
+
+		.kuning {
+			background-color: yellow;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h3>klik 2x pada setiap kotak untuk mengubah warnanya</h3>
+	<div class="kotak"></div> <!--kotak pafae-->
+	<div class="kotak"></div> <!--kotak kedua-->
+	<div class="kotak"></div> <!--kotak ketiga-->
+	<div class="kotak"></div> <!--kotak keempat-->
+</body>
+
+</html>

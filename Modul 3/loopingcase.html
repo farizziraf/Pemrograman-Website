@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Program Javascript</title>
+    <script language = "Javascript">
+        function test ()
+        {
+            val1=window.prompt("Input Nilai (1-5):")
+            switch (val1)
+        {
+            case"1":
+            document.write("Bilangan satu")
+            break
+            case"2":
+            document.write("Bilangan dua")
+            break
+            case"3":
+            document.write("Bilangan tiga")
+            break
+            case"4":
+            document.write("Bilangan empat")
+            break
+            case"5":
+            document.write("Bilangan lima")
+            break
+            default:
+            document.write("Bilangan lainnya")
+        }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>

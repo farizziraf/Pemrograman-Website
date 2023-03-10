@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Event click tombol "sembunyikan" untuk foto1
+            $(".sembunyi1").click(function () {
+                $("#foto1").hide("slow")
+            });
+            // Event click tombol "tampilkan" untuk foto1
+            $(".tampil1").click(function () {
+                $("#foto1").show("slow")
+            });
+            // Event click tombol "sembunyikan" untuk foto2
+            $(".sembunyi2").click(function () {
+                $("#foto2").hide("slow")
+            });
+            // Event click tombol "tampilkan" untuk foto2
+            $(".tampil2").click(function () {
+                $("#foto2").show("slow")
+            });
+        });
+    </script>
+
+    <!-- Mengatur tampilan gambar -->
+    <style type="text/css">
+        img {
+            display: block;
+            max-width: 100%;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Tombol untuk menyembunyikan dan menampilkan gambar pertama -->
+    <button class="sembunyi1">sembunyikan</button>
+    <button class="tampil1">tampilkan</button>
+    <br>
+    <br>
+
+    <!-- Tombol untuk menyembunyikan dan menampilkan gambar kedua -->
+    <button class="sembunyi2">sembunyikan</button>
+    <button class="tampil2">tampilkan</button>
+
+    <p><img id="foto1" src="Foto/1.jpg"></p> <!-- Menampilkan gambar pertama -->
+    <p><img id="foto2" src="Foto/2.jpg"></p> <!-- Menampilkan gambar kedua -->
+</body>
+
+</html>

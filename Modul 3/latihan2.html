@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator Sederhana</title>
+    <script>
+        // Fungsi hitung() akan dijalankan ketika button di klik
+        function hitung() {
+            // Mengambil nilai bilangan pertama, kedua, dan operator menggunakan metode getElementById()
+            var bil1 = parseFloat(document.getElementById("bilangan1").value);
+            var bil2 = parseFloat(document.getElementById("bilangan2").value);
+            var operator = document.getElementById("operator").value;
+            var hasil = 0;
+
+            // Melakukan perhitungan aritmatika berdasarkan operator yang dipilih menggunakan struktur if else
+            if (operator == "+") {
+                hasil = bil1 + bil2;
+            } else if (operator == "-") {
+                hasil = bil1 - bil2;
+            } else if (operator == "x") {
+                hasil = bil1 * bil2;
+            } else if (operator == "/") {
+                hasil = bil1 / bil2;
+            }
+
+            // Menampilkan nilai hasil ke output field menggunakan metode value
+            document.getElementById("hasil").value = hasil;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Kalkulator Sederhana</h1>
+    <!-- Input field untuk bilangan pertama -->
+    <label for="bilangan1">Bilangan 1:</label>
+    <input type="text" id="bilangan1">
+    <br>
+    <br>
+
+    <!-- Drop-down menu untuk memilih operator aritmatika -->
+    <label for="operator">Operator:</label>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">×</option>
+        <option value="/">/</option>
+    </select>
+    <br>
+    <br>
+
+    <!-- Input field untuk bilangan kedua -->
+    <label for="bilangan2">Bilangan 2:</label>
+    <input type="text" id="bilangan2">
+    <br>
+    <br>
+
+    <!-- Button yang akan memanggil fungsi hitung() ketika diklik -->
+    <button onclick="hitung()">Hitung</button>
+    <br>
+    <br>
+
+    <!-- Output field yang akan menampilkan hasil perhitungan -->
+    <label for="hasil">Hasil:</label>
+    <input type="text" id="hasil" disabled>
+
+    <script>
+        // Menampilkan waktu terakhir halaman di-modifikasi menggunakan metode lastModified
+        document.write("Dimodifikasi terakhir pada " + document.lastModified);
+    </script>
+</body>
+
+</html>
