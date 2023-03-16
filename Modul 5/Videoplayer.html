@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Ubah warna latar belakang body */
+        body {
+            background-color: #1c1c1e;
+        }
+
+        /* CSS untuk memposisikan tag h3 */
+        h3 {
+            text-align: center;
+            color: #E26D5C;
+            margin-top: 50px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Ubah warna latar belakang container */
+        .container {
+            background-color: #1C1C1C;
+            color: #333333;
+        }
+
+        /* Ubah warna pada daftar putar */
+        .list-group-item {
+            background-color: #333333;
+            color: #EFEFEF;
+        }
+
+        /* Ubah warna pada daftar putar yang aktif */
+        .list-group-item.active {
+            background-color: #EFEFEF;
+            color: #333333;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Imagine Dragon Top 5 Songs</h3>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Menambahkan pemutar video -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video id="my-video" class="embed-responsive-item" controls preload="auto">
+                        <source src="video/Imagine Dragons - Believer (Official Music Video).mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Menambahkan daftar putar -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item active"
+                        data-src="video/Imagine Dragons - Believer (Official Music Video).mp4">Believer</a>
+                    <a href="#" class="list-group-item"
+                        data-src="video/Imagine Dragons - Bones (Official Music Video).mp4">Bones</a>
+                    <a href="#" class="list-group-item"
+                        data-src="video/Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends).mp4">Enemy</a>
+                    <a href="#" class="list-group-item" 
+                        data-src="video/Imagine Dragons - Thunder.mp4">Thunder</a>
+                    <a href="#" class="list-group-item"
+                        data-src="video/Imagine Dragons - Demons (Official Music Video).mp4">Demons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menambahkan jQuery -->
+    <script src="bootstrap-4.5.3-dist/js/jquery-3.6.3.min.js"></script>
+    <!-- Menambahkan script untuk mengatur pemutar video -->
+    <script>
+        $(function () {
+            var video = document.getElementById("my-video");
+            $('.list-group-item').click(function () {
+                var videoSrc = $(this).data('src');
+                $('.list-group-item').removeClass('active');
+                $(this).addClass('active');
+                video.src = videoSrc;
+                video.load();
+                video.play();
+                return false;
+            });
+        });
+    </script>
+
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
