@@ -1,9 +1,9 @@
 <?php
 // konfigurasi database
-$host = "localhost"; // sesuaikan dengan host database Anda
-$username = "root"; // sesuaikan dengan username database Anda
-$password = ""; // sesuaikan dengan password database Anda
-$dbname = "myDB"; // sesuaikan dengan nama database Anda
+$host = "localhost";
+$username = "root";
+$password = "";
+$dbname = "myDB";
 
 // membuat koneksi ke database
 $koneksi = mysqli_connect($host, $username, $password, $dbname);
