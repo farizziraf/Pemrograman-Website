@@ -9,6 +9,6 @@ $alamat = $_POST['alamat'];
 // Query SQL untuk insert data
 $query = "INSERT INTO mahasiswa SET nim='$nim', nama='$nama', jurusan='$jurusan', jenis_kelamin='$jenis_kelamin', alamat='$alamat'";
 mysqli_query($koneksi, $query);
-// Mengalihkan ke halaman index.php
-header('location: index.php');
+// Mengalihkan ke halaman phpform.php
+header('location: phpform.php');
 ?>
