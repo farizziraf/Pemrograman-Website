@@ -12,6 +12,6 @@ $pesan = $_POST['pesan'];
 $query = "INSERT INTO kontak (nama, jkel, email, alamat, kota, pesan) VALUES ('$nama', '$jkel', '$email', '$alamat', '$kota', '$pesan')";
 mysqli_query($koneksi, $query);
 
-// Mengalihkan ke halaman index.php
-header('location: index.php');
+// Mengalihkan ke halaman tampilkontak.php
+header('location: tampilkontak.php');
 ?>
