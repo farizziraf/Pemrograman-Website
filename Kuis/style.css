@@ -1,0 +1,87 @@
+/* style.css */
+
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gaya khusus halaman index.php */
+#index-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Gaya khusus halaman lupapass.php */
+#lupapass-container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Gaya khusus halaman registrasi.php */
+#registrasi-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#registrasi-container label {
+    text-align: left;
+    margin-top: 10px;
+}
+
+#registrasi-container input[type="date"] {
+    width: 204px; /* Mengatasi lebar input type "date" yang berbeda pada beberapa browser */
+}
