@@ -7,16 +7,17 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         #chartContainer {
-        width: 100%;
-        height: 500px;
-        max-width: 1200px;
-        margin: 0 auto;
+            width: 100%;
+            height: 500px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
         canvas {
-        width: 100% !important;
-        height: auto !important;
+            width: 100% !important;
+            height: auto !important;
         }
-        </style>
+    </style>
 </head>
 
 <body>
