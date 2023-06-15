@@ -57,11 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   move_uploaded_file($_FILES['foto_diri']['tmp_name'], $target_path);
 
   // Insert data ke tabel jmr_biodata
-<<<<<<< HEAD
   $sql_insert = "INSERT INTO jmr_biodata (id_pendaftaran, foto_diri, nama, tempat_lahir, tanggal_lahir, alamat_asal, kota_kabupaten, kode_pos, kelamin, agama, nama_orangtua_wali, alamat_orangtua_wali, nomor_telepon_orangtua_wali, pekerjaan_orangtua_wali, penghasilan_orangtua_wali)
-=======
-  $sql_insert = "INSERT INTO jmr_biodata (id_pendaftaran, foto_diri, nama, tempat_lahir, tanggal_lahir, alamat_asal, kota_kabupaten, kode_pos, kelamin, agama, nama_orangtua, alamat_orangtua, nomor_telepon_orangtua, pekerjaan_orangtua, penghasilan_orangtua)
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                  VALUES ('$id_pendaftaran', '$new_filename', '$nama', '$tempat_lahir', '$tanggal_lahir', '$alamat_asal', '$kota_kabupaten', '$kode_pos', '$kelamin', '$agama', '$nama_orangtua', '$alamat_orangtua', '$nomor_telepon_orangtua', '$pekerjaan_orangtua', '$penghasilan_orangtua')";
   $result_insert = mysqli_query($conn, $sql_insert);
 

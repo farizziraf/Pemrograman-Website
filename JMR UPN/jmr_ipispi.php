@@ -31,12 +31,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ipi_spi1 = $_POST['ipi_spi1'];
     $ipi_spi2 = $_POST['ipi_spi2'];
 
-<<<<<<< HEAD
-=======
-    // Lakukan operasi yang diperlukan dengan data IPI/SPI yang dipilih
-    // ...
-
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
     // Mendapatkan ekstensi file
     $extension = pathinfo($_FILES['surat_pernyataaan']['name'], PATHINFO_EXTENSION);
 
@@ -46,30 +40,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Menentukan path lengkap untuk penyimpanan
     $target_path = 'Assets/jmr_ipispi/' . $new_filename;
 
-<<<<<<< HEAD
     // Menyimpan file surat pernyataan ke path yang ditentukan
-=======
-    // Menyimpan file foto ke path yang ditentukan
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
     move_uploaded_file($_FILES['surat_pernyataaan']['tmp_name'], $target_path);
 
     // Insert data ke tabel jmr_ipispi
     $sql_insert = "INSERT INTO jmr_ipispi (id_pendaftaran, ipispi1, ipispi2, sp_ipispi)
-<<<<<<< HEAD
                    VALUES ('$id_pendaftaran', '$ipi_spi1', '$ipi_spi2', '$new_filename')";
-=======
-  VALUES ('$id_pendaftaran', '$ipi_spi1', '$ipi_spi2', '$new_filename')";
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
     $result_insert = mysqli_query($conn, $sql_insert);
 
     // Cek apakah operasi berhasil
     if ($result_insert) {
         echo "Pengajuan IPI/SPI berhasil.";
         header("Location: jmr.php");
-<<<<<<< HEAD
         exit();
-=======
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
     } else {
         echo "Terjadi kesalahan saat mengajukan IPI/SPI.";
     }
@@ -79,7 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -116,45 +98,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </li>
 
                     <li class="item">
-=======
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JMR</title>
-  <link rel="icon" type="image/x-icon" href="Assets/Foto/logo_upn.png">
-  <link rel="stylesheet" href="style.css" />
-  <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-</head>
-
-<body>
-<nav class="sidebar">
-
-<div class="logo_items flex">
-    <span class="nav_image">
-        <img src="Assets/Foto/logo_upn.png" alt="logo_img" />
-    </span>
-    <span class="logo_name">SIMABA UPN</span>
-</div>
-
-<div class="menu_container">
-    <div class="menu_items">
-        <ul class="menu_item">
-            <li class="item">
-                <a href="user.php" class="link flex">
-                    <i class="bx bx-home-alt"></i>
-                    <span>Beranda</span>
-                </a>
-            </li>
-
-            <li class="item">
-                <a href="jmr.php" class="link flex">
-                    <i class="bx bx-grid-alt"></i>
-                    <span>Mandiri Jalur Reguler</span>
-                </a>
-            </li>
-
-            <li class="item">
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                         <a href="brosur maba 2023.pdf" class="link flex">
                             <i class="bx bxs-file-pdf"></i>
                             <span>Brosur Maba 2023</span>

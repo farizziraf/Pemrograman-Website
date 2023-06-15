@@ -61,11 +61,7 @@ body {
 
 .container .login .input-group input:focus,
 .container .login .input-group input:valid {
-<<<<<<< HEAD
   border-color: #2D4E38;
-=======
-  border-color: #a29bfe;
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
 }
 
 .container .login .input-group .btn {
@@ -98,11 +94,7 @@ body {
 
 .login-register-text a {
   text-decoration: none;
-<<<<<<< HEAD
   color: #497f5b;
-=======
-  color: #2D4E38;
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
   cursor: pointer;
 }
 
@@ -471,7 +463,6 @@ input[type="submit"] {
   text-decoration: none;
   color: #2D4E38;
 }
-<<<<<<< HEAD
 
 .btn_cbt {
   border-style: solid;
@@ -547,5 +538,3 @@ input[type="submit"] {
   background: #2D4E38;
   color: #fff;
 }
-=======
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
