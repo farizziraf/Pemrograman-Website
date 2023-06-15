@@ -62,7 +62,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form action="" method="POST" class="login">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
             <div class="input-group">
+<<<<<<< HEAD
                 <input type="text" placeholder="Nama Lengkap" name="nama" value="<?php echo isset($nama) ? $nama : ''; ?>" required>
+=======
+                <input type="text" placeholder="Username" name="nama" value="<?php echo isset($nama) ? $nama : ''; ?>" required>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
             </div>
             <div class="input-group">
                 <input type="text" placeholder="Nomor Telepon" name="nomor_telepon" value="<?php echo isset($_POST['nomor_telepon']) ? $_POST['nomor_telepon'] : ''; ?>" required>

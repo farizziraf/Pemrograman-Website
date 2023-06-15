@@ -55,7 +55,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <title>JMR - Raport</title>
+=======
+    <title>JMR</title>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
     <link rel="icon" type="image/x-icon" href="Assets/Foto/logo_upn.png">
     <link rel="stylesheet" href="style.css" />
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -99,7 +103,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf"
                             class="link flex">
                             <i class="bx bxs-file-pdf"></i>
+<<<<<<< HEAD
                             <span>Daya Tampung Maba <br>2023</span>
+=======
+                            <span>Daya Tampung Maba <br>2023 2023</span>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                         </a>
                     </li>
 

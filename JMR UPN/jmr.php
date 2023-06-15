@@ -59,7 +59,11 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
                     <li class="item">
                         <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf" class="link flex">
                             <i class="bx bxs-file-pdf"></i>
+<<<<<<< HEAD
                             <span>Daya Tampung Maba <br>2023</span>
+=======
+                            <span>Daya Tampung Maba <br>2023 2023</span>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                         </a>
                     </li>
 
@@ -99,9 +103,13 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
     <div class="content">
         <div class="tahap">
             <div class="tahap_item">
+<<<<<<< HEAD
                 <p class="judul">
                     Tahap Pendaftaran MABA 2023 Jalur Mandiri Reguler
                 </p>
+=======
+                <p class="judul">Tahap Pendaftaran MABA 2023 Jalur Mandiri Reguler</p>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 <div class="tahap_step">
                     <p>Tahap 1</p>
                 </div>
@@ -114,64 +122,93 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
                 </div>
                 <div class="tahap_content">
                     <p>Biodata</p>
+<<<<<<< HEAD
                     <a class="tahap_btn disabled" href="jmr_biodata.php"
                         >Entry Biodata</a>
+=======
+                    <a class="tahap_btn" href="jmr_biodata.php">Entry Biodata</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 3</p>
                 </div>
                 <div class="tahap_content">
                     <p>Data Sekolah</p>
+<<<<<<< HEAD
                     <a
                         class="tahap_btn disabled"
                         href="jmr_datasekolah.php"
                         >Entry Data Sekolah SMA/MA/SMK</a>
+=======
+                    <a class="tahap_btn" href="jmr_datasekolah.php">Entry Data Sekolah SMA/MA/SMK</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 4</p>
                 </div>
                 <div class="tahap_content">
                     <p>Nilai Raport</p>
+<<<<<<< HEAD
                     <a class="tahap_btn disabled" href="jmr_raport.php"
                         >Entry Rata-rata Nilai Raport</a>
+=======
+                    <a class="tahap_btn" href="jmr_raport.php">Entry Rata-rata Nilai Raport</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 5</p>
                 </div>
                 <div class="tahap_content">
                     <p>Nilai MAPEL Pendukung Pilihan 1</p>
+<<<<<<< HEAD
                     <a
                         class="tahap_btn disabled"
                         href="jmr_nilaipendukung1.php"
                         >Entry Rata-rata Nilai Mata Pelajaran Pendukung Pilihan 1</a>
+=======
+                    <a class="tahap_btn" href="jmr_nilaipendukung1.php">Entry Rata-rata Nilai Mata Pelajaran Pendukung Pilihan 1</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 6</p>
                 </div>
                 <div class="tahap_content">
                     <p>Nilai MAPEL Pendukung Pilihan 2</p>
+<<<<<<< HEAD
                     <a
                         class="tahap_btn disabled"
                         href="jmr_nilaipendukung2.php"
                         >Entry Rata-rata Nilai Mata Pelajaran Pendukung Pilihan 2</a>
+=======
+                    <a class="tahap_btn" href="jmr_nilaipendukung2.php">Entry Rata-rata Nilai Mata Pelajaran Pendukung Pilihan 2</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 7</p>
                 </div>
                 <div class="tahap_content">
                     <p>IPI/SPI</p>
+<<<<<<< HEAD
                     <a class="tahap_btn disabled" href="jmr_ipispi.php">Entry IPI/SPI</a>
+=======
+                    <a class="tahap_btn" href="jmr_ipispi.php">Entry IPI/SPI</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
                 <div class="tahap_step">
                     <p>Tahap 8</p>
                 </div>
                 <div class="tahap_content">
                     <p>Cetak Kartu Ujian CBT</p>
+<<<<<<< HEAD
                     <a class="tahap_btn disabled" href="jmr_cbt.php">Cetak Kartu Ujian CBT</a>
+=======
+                    <a class="tahap_btn" href="jmr_cbt.php">Cetak Kartu Ujian CBT</a>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
     <script>
         // Dapatkan elemen tautan tahap
@@ -210,3 +247,8 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
 </body>
 
 </html>
+=======
+</body>
+
+</html>
+>>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
