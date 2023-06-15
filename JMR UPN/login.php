@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form action="" method="POST" class="login">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group">
-                <input type="text" placeholder="ID Pendaftaran" name="username" value="<?php echo isset($nama) ? $nama : ''; ?>" required>
+                <input type="text" placeholder="Username" name="username" value="<?php echo isset($nama) ? $nama : ''; ?>" required>
             </div>
             <div class="input-group">
                 <input type="password" placeholder="Password" name="password" id="password" value="<?php echo isset($_POST['password']) ? $_POST['password'] : ''; ?>" required>

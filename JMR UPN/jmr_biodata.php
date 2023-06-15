@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   move_uploaded_file($_FILES['foto_diri']['tmp_name'], $target_path);
 
   // Insert data ke tabel jmr_biodata
-  $sql_insert = "INSERT INTO jmr_biodata (id_pendaftaran, foto_diri, nama, tempat_lahir, tanggal_lahir, alamat_asal, kota_kabupaten, kode_pos, kelamin, agama, nama_orangtua, alamat_orangtua, nomor_telepon_orangtua, pekerjaan_orangtua, penghasilan_orangtua)
+  $sql_insert = "INSERT INTO jmr_biodata (id_pendaftaran, foto_diri, nama, tempat_lahir, tanggal_lahir, alamat_asal, kota_kabupaten, kode_pos, kelamin, agama, nama_orangtua_wali, alamat_orangtua_wali, nomor_telepon_orangtua_wali, pekerjaan_orangtua_wali, penghasilan_orangtua_wali)
                  VALUES ('$id_pendaftaran', '$new_filename', '$nama', '$tempat_lahir', '$tanggal_lahir', '$alamat_asal', '$kota_kabupaten', '$kode_pos', '$kelamin', '$agama', '$nama_orangtua', '$alamat_orangtua', '$nomor_telepon_orangtua', '$pekerjaan_orangtua', '$penghasilan_orangtua')";
   $result_insert = mysqli_query($conn, $sql_insert);
 
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JMR</title>
+  <title>JMR - Biodata</title>
   <link rel="icon" type="image/x-icon" href="Assets/Foto/logo_upn.png">
   <link rel="stylesheet" href="style.css" />
   <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf"
               class="link flex">
               <i class="bx bxs-file-pdf"></i>
-              <span>Daya Tampung Maba <br>2023 2023</span>
+              <span>Daya Tampung Maba <br>2023</span>
             </a>
           </li>
 

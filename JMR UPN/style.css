@@ -61,7 +61,7 @@ body {
 
 .container .login .input-group input:focus,
 .container .login .input-group input:valid {
-  border-color: #a29bfe;
+  border-color: #2D4E38;
 }
 
 .container .login .input-group .btn {
@@ -94,7 +94,7 @@ body {
 
 .login-register-text a {
   text-decoration: none;
-  color: #2D4E38;
+  color: #497f5b;
   cursor: pointer;
 }
 
@@ -462,4 +462,79 @@ input[type="submit"] {
 .tabel_prodi a {
   text-decoration: none;
   color: #2D4E38;
+}
+
+.btn_cbt {
+  border-style: solid;
+  padding: 2px 15px;
+  border-radius: 10px;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+
+.btn_cbt:hover {
+  background: #2D4E38;
+  color: #fff;
+}
+
+.content_cbt {
+  display: flex;
+}
+
+.content_cbt img {
+  margin-right: 10px;
+  height: 600px
+}
+
+.lokasi_cbt {
+  display: flex;
+  flex-direction: column;
+}
+
+.label_cbt {
+  margin-bottom: 5px;
+}
+
+.tabel_data {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 2px 15px 25px 15px;
+  text-decoration: none;
+  height: 412px;
+  overflow-y: auto;
+}
+
+.tabel_data table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabel_data th, .tabel_data td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabel_data th {
+  background-color: #2D4E38;
+  color: #fff;
+}
+
+.tabel_data tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.btn_excel {
+  border-style: solid;
+  padding: 2px 15px;
+  border-radius: 10px;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+
+.btn_excel:hover {
+  background: #2D4E38;
+  color: #fff;
 }

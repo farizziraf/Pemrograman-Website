@@ -165,7 +165,7 @@ function generatePDF($nama, $id_pendaftaran, $prodi1, $prodi2, $lokasi_cbt)
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JMR</title>
+  <title>JMR - CBT</title>
   <link rel="icon" type="image/x-icon" href="Assets/Foto/logo_upn.png">
   <link rel="stylesheet" href="style.css" />
   <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -208,7 +208,7 @@ function generatePDF($nama, $id_pendaftaran, $prodi1, $prodi2, $lokasi_cbt)
                     <li class="item">
                         <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf" class="link flex">
                             <i class="bx bxs-file-pdf"></i>
-                            <span>Daya Tampung Maba <br>2023 2023</span>
+                            <span>Daya Tampung Maba <br>2023</span>
                         </a>
                     </li>
 
@@ -246,10 +246,16 @@ function generatePDF($nama, $id_pendaftaran, $prodi1, $prodi2, $lokasi_cbt)
   </nav>
 
   <div class="content">
-    <p class="judul">Cetak Kartu Ujian CBT</p>
+  <p class="judul">Cetak Kartu Ujian CBT</p>
+  <div class="content_cbt">
+    <img src="Assets/Foto/lokasi_ujian.jpg"/>
+    <div class="lokasi_cbt">
     <form method="post" action="" onsubmit="return confirmSubmit()">
-        <button type="submit">submit</button>
+        <label for="lokasicbt">Submit untuk menentukan Lokasi CBT, Serta untuk mencetak Kartu Ujian</label>
+        <button class="btn_cbt" type="submit">submit</button>
     </form>
+    </div>
+   </div> 
   </div>
 
   <script>
