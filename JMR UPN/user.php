@@ -59,11 +59,7 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
                     <li class="item">
                         <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf" class="link flex">
                             <i class="bx bxs-file-pdf"></i>
-<<<<<<< HEAD
                             <span>Daya Tampung Maba <br>2023</span>
-=======
-                            <span>Daya Tampung Maba <br>2023 2023</span>
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                         </a>
                     </li>
 
