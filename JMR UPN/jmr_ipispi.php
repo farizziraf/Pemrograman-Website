@@ -105,16 +105,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </li>
 
                     <li class="item">
-<<<<<<< HEAD
                         <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf"
                             class="link flex">
                             <i class="bx bxs-file-pdf"></i>
                             <span>Daya Tampung Maba <br>2023</span>
-=======
-                        <a href="Salinan_Kep_Rektor_Daya_Tampung_Awal_Mahasiswa_Baru_Program_Sarjana_UPNV_Jawa_Timur_Tahun_2023.pdf" class="link flex">
-                            <i class="bx bxs-file-pdf"></i>
-                            <span>Daya Tampung Maba <br>2023 2023</span>
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
                         </a>
                     </li>
 
@@ -139,7 +133,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </a>
                     </li>
 
-<<<<<<< HEAD
                     <li class="item">
                         <a href="logout.php" class="link flex">
                             <i class="bx bx-log-out"></i>
@@ -212,78 +205,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 
 </html>
-=======
-            <li class="item">
-                <a href="logout.php" class="link flex">
-                    <i class="bx bx-log-out"></i>
-                    <span>Logout</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-</nav>
-
-  <div class="content">
-  <p class="judul">Entry IPI/SPI</p>
-  <form method="post" action="" enctype="multipart/form-data" onsubmit="return confirmSubmit()">
-        <label for="id_pendaftaran">Id Pendaftaran:</label>
-        <input type="text" name="id_pendaftaran" value="<?php echo $id_pendaftaran; ?>" disabled>
-        <br>
-        <label for="nama">Nama:</label>
-        <input type="text" name="nama" value="<?php echo $nama; ?>" disabled>
-        <br>
-        <label for="prodi1">Pilihan Prodi 1:</label>
-        <input type="text" name="prodi1" value="<?php echo $prodi1; ?>" disabled>
-        <br>
-        <label for="ipi_spi1">IPI/SPI Pilihan 1:</label>
-        <select name="ipi_spi1" required>
-            <option value="">Pilih IPI/SPI</option>
-            <option value="0">0</option>
-            <option value="15000000">15.000.000</option>
-            <option value="30000000">30.000.000</option>
-            <option value="45000000">45.000.000</option>
-            <option value="60000000">60.000.000</option>
-            <option value="75000000">75.000.000</option>
-            <option value="90000000">90.000.000</option>
-        </select>
-        <br>
-        <label for="prodi2">Pilihan Prodi 2:</label>
-        <input type="text" name="prodi2" value="<?php echo $prodi2; ?>" disabled>
-        <br>
-        <label for="ipi_spi2">IPI/SPI Pilihan 2:</label>
-        <select name="ipi_spi2" required>
-            <option value="">Pilih IPI/SPI</option>
-            <option value="0">0</option>
-            <option value="15000000">15.000.000</option>
-            <option value="30000000">30.000.000</option>
-            <option value="45000000">45.000.000</option>
-            <option value="60000000">60.000.000</option>
-            <option value="75000000">75.000.000</option>
-            <option value="90000000">90.000.000</option>
-        </select>
-        <br><br>
-        <a href="download_file.php">Download File PDF</a>
-        <br><br>
-        <label for="surat_pernyataaan">Upload Surat Pernyataan:</label>
-        <input type="file" name="surat_pernyataaan" required>
-        <br><br>
-        <input type="submit" value="Submit">
-    </form>
-  </div>
-
-  <script>
-    function confirmSubmit() {
-      var confirmation = confirm("\nApakah Anda sudah yakin?\n\nCatatan: Setelah Anda melakukan submit, data yang Anda input tidak dapat diubah lagi");
-      if (confirmation) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-  </script>
-</body>
-
-</html>
->>>>>>> 8db55c665defb29a2de05acaa32d84c81b77c128
