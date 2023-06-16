@@ -31,7 +31,7 @@ if (isset($_POST['export'])) {
             <span class="nav_image">
                 <img src="Assets/Foto/logo_upn.png" alt="logo_img" />
             </span>
-            <span class="logo_name">SIMABA UPN</span>
+            <span class="logo_name">JMR UPN</span>
         </div>
 
         <div class="menu_container">

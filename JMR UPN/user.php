@@ -16,7 +16,7 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIMABA UPN</title>
+    <title>JMR UPN</title>
     <link rel="icon" type="image/x-icon" href="Assets/Foto/logo_upn.png">
     <link rel="stylesheet" href="style.css" />
     <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -29,7 +29,7 @@ if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'user') {
             <span class="nav_image">
                 <img src="Assets/Foto/logo_upn.png" alt="logo_img" />
             </span>
-            <span class="logo_name">SIMABA UPN</span>
+            <span class="logo_name">JMR UPN</span>
         </div>
 
         <div class="menu_container">
