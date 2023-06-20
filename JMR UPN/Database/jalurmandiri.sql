@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2023 at 09:05 PM
+-- Generation Time: Jun 20, 2023 at 09:52 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -81,7 +81,8 @@ INSERT INTO `jmr_biodata` (`jmr_biodata_id`, `id_pendaftaran`, `foto_diri`, `nam
 (9, '2301000009', '2301000009.jpg', 'Rizky Setiawan', 'Surabaya', '2005-02-01', 'Jl. Raya Barat No. 10', 'Surabaya', '54321', 'L', 'Islam', 'Muhammad Bani', 'Jl. Raya Barat No. 10', '081234567812', 'Wiraswasta', '3.500.000 < - ≤ 5.000.000'),
 (10, '2301000010', '2301000010.jpg', 'Siti Nurhayati', 'sidoarjo', '2005-03-08', 'Jl. Merdeka Timur No. 15', 'sidoarjo', '12345', 'P', 'Islam', 'Ahmad Hidayat', 'Jl. Merdeka Timur No. 15', '081234567812', 'Karyawan Swasta', '2.000.000 < - ≤ 3.500.000'),
 (11, '2301000011', '2301000011.jpg', 'Ahmad Fauzi', 'Surabaya', '2004-11-15', 'Jl. Merdeka Selatan No. 20', 'Surabaya', '54321', 'L', 'Islam', 'Siti Rahmah', 'Jl. Merdeka Selatan No. 20', '081234567812', 'Wiraswasta', '3.500.000 < - ≤ 5.000.000'),
-(12, '2301000012', '2301000012.jpg', 'Dian Permata Sari', 'Gresik', '2005-02-17', 'Jl. Merdeka Barat No. 25', 'Gresik', '54321', 'P', 'Islam', 'Lukman Rahmaddani', 'Jl. Merdeka Barat No. 25', '081234567812', 'Arsitek', '10.000.000 < - ≤ 20.000.000');
+(12, '2301000012', '2301000012.jpg', 'Dian Permata Sari', 'Gresik', '2005-02-17', 'Jl. Merdeka Barat No. 25', 'Gresik', '54321', 'P', 'Islam', 'Lukman Rahmaddani', 'Jl. Merdeka Barat No. 25', '081234567812', 'Arsitek', '10.000.000 < - ≤ 20.000.000'),
+(13, '2301000013', '2301000013.jpg', 'Abrila Fatzali', 'Surabaya', '2004-11-01', 'Ngagel gg.01 no.02', 'Surabaya', '61141', 'L', 'Islam', 'Hasanudin', 'Ngagel gg.01 no.02', '085236427222', 'Wiraswasta', '3.500.000 < - ≤ 5.000.000');
 
 -- --------------------------------------------------------
 
@@ -111,7 +112,8 @@ INSERT INTO `jmr_cbt` (`cbt_id`, `id_pendaftaran`, `lokasi_cbt`) VALUES
 (9, '2301000009', 'Fakultas Ilmu Komputer - Laboratorium Solusi - Lantai 2 FIK'),
 (10, '2301000010', 'Fakultas Ilmu Komputer - Laboratorium Sains Data - Lantai 2 FIK'),
 (11, '2301000011', 'Fakultas Ekonomi & Bisnis - Laboratorium Terpadu 2 - Lantai 2 FEB 1'),
-(12, '2301000012', 'GKB 1 - Lab Kom 3 - Lantai 1 GKB 1');
+(12, '2301000012', 'GKB 1 - Lab Kom 3 - Lantai 1 GKB 1'),
+(13, '2301000013', 'Fakultas Ilmu Komputer - Laboratorium Sains Data - Lantai 2 FIK');
 
 -- --------------------------------------------------------
 
@@ -145,7 +147,8 @@ INSERT INTO `jmr_datasekolah` (`jmr_datasekolah_id`, `id_pendaftaran`, `npsn`, `
 (9, '2301000009', '54321098', 'SMA Negeri 5 Bandung', 'negeri', '5432109876', 2023),
 (10, '2301000010', '54321098', 'SMA Negeri 17 Surabaya', 'negeri', '5432109876', 2023),
 (11, '2301000011', '54321098', 'SMA Negeri 2 Surabaya', 'negeri', '5432109876', 2023),
-(12, '2301000012', '54321098', 'SMA Muhammadiyah 1 Gresik', 'swasta', '5432109876', 2023);
+(12, '2301000012', '54321098', 'SMA Muhammadiyah 1 Gresik', 'swasta', '5432109876', 2023),
+(13, '2301000013', '2143435136', 'SMA Negeri 15 Surabaya', 'negeri', '0037427711', 2023);
 
 -- --------------------------------------------------------
 
@@ -177,7 +180,8 @@ INSERT INTO `jmr_ipispi` (`ipispi_id`, `id_pendaftaran`, `ipispi1`, `ipispi2`, `
 (9, '2301000009', 15000000, 15000000, '2301000009.pdf'),
 (10, '2301000010', 30000000, 15000000, '2301000010.pdf'),
 (11, '2301000011', 30000000, 15000000, '2301000011.pdf'),
-(12, '2301000012', 60000000, 30000000, '2301000012.pdf');
+(12, '2301000012', 60000000, 30000000, '2301000012.pdf'),
+(13, '2301000013', 15000000, 15000000, '2301000013.pdf');
 
 -- --------------------------------------------------------
 
@@ -212,7 +216,8 @@ INSERT INTO `jmr_nilaipendukung1` (`jmr_nilaipendukung1_id`, `id_pendaftaran`, `
 (9, '2301000009', 'Kimia', '85.20', '87.50', '89.10', '91.00', '93.50'),
 (10, '2301000010', 'Ekonomi', '82.40', '85.10', '88.30', '90.10', '92.30'),
 (11, '2301000011', 'Matematika', '85.00', '87.50', '89.00', '91.00', '93.00'),
-(12, '2301000012', 'Sosiologi', '88.00', '90.50', '92.00', '93.50', '95.00');
+(12, '2301000012', 'Sosiologi', '88.00', '90.50', '92.00', '93.50', '95.00'),
+(13, '2301000013', 'Matematika', '85.00', '85.00', '85.00', '85.00', '85.00');
 
 -- --------------------------------------------------------
 
@@ -247,7 +252,8 @@ INSERT INTO `jmr_nilaipendukung2` (`jmr_nilaipendukung2_id`, `id_pendaftaran`, `
 (9, '2301000009', 'Fisika', '82.80', '85.50', '88.20', '90.00', '92.50'),
 (10, '2301000010', 'Ekonomi', '82.40', '85.10', '88.30', '90.10', '92.30'),
 (11, '2301000011', 'Fisika', '83.20', '86.00', '88.30', '90.50', '92.80'),
-(12, '2301000012', 'Sejarah', '85.20', '87.00', '89.20', '91.00', '94.00');
+(12, '2301000012', 'Sejarah', '85.20', '87.00', '89.20', '91.00', '94.00'),
+(13, '2301000013', 'Matematika', '85.00', '85.00', '85.00', '85.00', '85.00');
 
 -- --------------------------------------------------------
 
@@ -278,7 +284,8 @@ INSERT INTO `jmr_programstudi` (`jmr_programstudi_id`, `id_pendaftaran`, `progra
 (9, '2301000009', 6, 10),
 (10, '2301000010', 2, 3),
 (11, '2301000011', 8, 5),
-(12, '2301000012', 19, 27);
+(12, '2301000012', 19, 27),
+(13, '2301000013', 13, 15);
 
 -- --------------------------------------------------------
 
@@ -312,7 +319,8 @@ INSERT INTO `jmr_raport` (`jmr_raport_id`, `id_pendaftaran`, `kelas_10_smt1`, `k
 (9, '2301000009', '83.50', '86.20', '88.70', '90.30', '92.80'),
 (10, '2301000010', '85.30', '87.80', '89.20', '91.10', '93.60'),
 (11, '2301000011', '84.50', '86.80', '88.50', '90.20', '92.70'),
-(12, '2301000012', '87.50', '89.80', '91.50', '93.20', '95.70');
+(12, '2301000012', '87.50', '89.80', '91.50', '93.20', '95.70'),
+(13, '2301000013', '85.00', '85.00', '85.00', '85.00', '85.00');
 
 -- --------------------------------------------------------
 
@@ -428,7 +436,9 @@ INSERT INTO `users` (`user_id`, `id_pendaftaran`, `nama`, `password`, `nomor_tel
 (9, '2301000009', 'Rizky Setiawan', '$2y$10$flwINnVdwaRHvtgRfH0wQOtZeCf3BXFql.bX.CnmtM27NDL9OGYOi', '081234567890', 'rizky.setiawan@example.com'),
 (10, '2301000010', 'Siti Nurhayati', '$2y$10$vlwuhJohD3R146r0vJXMge9z2fJlUwK92Y4frXr0aQy2foUp7siy6', '081234567890', 'siti.nurhayati@example.com'),
 (11, '2301000011', 'Ahmad Fauzi', '$2y$10$JA/qt4oc1b9REsMQEc9NAupCqH6n3z3sI21mLUluDI1FsRDuYOw6O', '081234567890', 'ahmad.fauzi@example.com'),
-(12, '2301000012', 'Dian Permata Sari', '$2y$10$nqU14fJdmG398XlIUbbmv.qI7bLmztKQ/qgjAzi9fdbXT5HKO8hyG', '081234567890', 'dian.permatasari@example.com');
+(12, '2301000012', 'Dian Permata Sari', '$2y$10$nqU14fJdmG398XlIUbbmv.qI7bLmztKQ/qgjAzi9fdbXT5HKO8hyG', '081234567890', 'dian.permatasari@example.com'),
+(13, '2301000013', 'Abrila Fatzali', '$2y$10$k2VODMDd1eHWhEI2EdIJ7.VLhWw4I6eYaTFbaxh7ok/LEMXztI4dK', '082226555331', 'abrila_fatzali@gmail.com'),
+(14, '2301000014', 'user', '$2y$10$w8UJtF5D..kr827nCPe6tuJCtt3dVGaavY.4fdeAz/Q1oOM2J.E8q', '081234567890', 'user@example.com');
 
 --
 -- Indexes for dumped tables
@@ -532,49 +542,49 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `jmr_biodata`
 --
 ALTER TABLE `jmr_biodata`
-  MODIFY `jmr_biodata_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_biodata_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_cbt`
 --
 ALTER TABLE `jmr_cbt`
-  MODIFY `cbt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `cbt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_datasekolah`
 --
 ALTER TABLE `jmr_datasekolah`
-  MODIFY `jmr_datasekolah_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_datasekolah_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_ipispi`
 --
 ALTER TABLE `jmr_ipispi`
-  MODIFY `ipispi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ipispi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_nilaipendukung1`
 --
 ALTER TABLE `jmr_nilaipendukung1`
-  MODIFY `jmr_nilaipendukung1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_nilaipendukung1_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_nilaipendukung2`
 --
 ALTER TABLE `jmr_nilaipendukung2`
-  MODIFY `jmr_nilaipendukung2_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_nilaipendukung2_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_programstudi`
 --
 ALTER TABLE `jmr_programstudi`
-  MODIFY `jmr_programstudi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_programstudi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jmr_raport`
 --
 ALTER TABLE `jmr_raport`
-  MODIFY `jmr_raport_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `jmr_raport_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `lokasi_cbt`
@@ -586,7 +596,7 @@ ALTER TABLE `lokasi_cbt`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
