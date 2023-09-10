@@ -1,0 +1,329 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0efe8;
+    font-family: 'Poppins';
+    font-style: normal;
+    margin: 0px;
+    color: #877EAF;
+}
+
+header {
+    margin: 0 auto;
+    display: inline;
+    padding-top: 50px;
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+    padding: 20px 70px 10px 70px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    background-color: #f0efe8;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+}
+
+.navbar .header-logo {
+    flex-grow: 1;
+}
+
+.navbar .header-logo img {
+    width: 200px;
+}
+
+nav.navbar .navigation-header {
+    flex-grow: 3;
+    text-align: right;
+    background-color: #f0efe8;
+}
+
+.navbar .navigation-header img, .nav-mobile {
+    display: none;
+}
+
+.navbar .navigation-header .nav-item {
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+.navbar .navigation-header .nav-item:last-child {
+    margin-right: 0px;
+}
+
+.navbar .navigation-header .nav-item a {
+    background-color: #f0efe8;
+    color: #877EAF;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.navbar .navigation-header .nav-item a:hover {
+    color: #E196B5;
+}
+
+.navbar .navigation-header ul {
+    display: none;
+    align-items: center;
+}
+
+.navbar .navigation-header li {
+    display: none;
+}
+
+main {
+    padding: 0px 20px 20px 20px;
+    overflow: auto;
+}
+
+main #content {
+    float: left;
+    width: 75%;
+    font-size: 15px;
+    color: #E196B5;
+    text-align: justify;
+}
+
+.keyword {
+    color: #877EAF;
+}
+
+main aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+main aside section img {
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    color: #000000;
+    background-color: #f0efe8;
+    text-align: center;
+}
+
+h2 {
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.album {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    overflow: auto;
+}
+
+.album-card {
+    flex: 0 0 calc(25% - 10px);
+    margin-right: 10px;
+    text-align: center;
+}
+
+.album-card img {
+    width: 220px;
+    height: auto;
+}
+
+.album-card p.album-name {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: 1px solid #E196B5;
+}
+
+.rounded {
+    border-radius: 15%;
+    width: 220px;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #f0efe8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+table.biodata {
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+table.biodata td.cell1 {
+    width: 120px;
+}
+
+table.biodata td.cell2 {
+    text-align: center;
+    width: 20px;
+}
+
+table.biodata td.cell3 {
+    width: 220px;
+}
+
+table.live-concert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+table.live-concert th {
+    padding: 10px;
+    border-bottom: 1px solid #E196B5;
+    font-size: 12pt;
+    text-align: center;
+}
+
+table.live-concert td {
+    padding: 10px 30px 10px 30px;
+    border-bottom: 1px solid #E196B5;
+    font-size: 10pt;
+}
+
+table.live-concert td.ticket {
+    text-align: center;
+}
+
+table.live-concert td a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table.live-concert td.ticket:hover {
+    text-decoration: none;
+    color: #f0efe8;
+    background-color: #E196B5;
+}
+
+table.top-song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table.top-song td {
+    text-align: left;
+    width: fit-content;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    main #content,
+    main aside {
+        width: 100%;
+        padding: 0;
+    }
+    .card-biodata {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navbar .navigation-header img {
+        display: none;
+    }
+    .nav-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 675px) {
+
+    main #content,
+    main aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    .navbar .navigation-header img{
+        display: inherit;
+        cursor: pointer;
+        padding: 5px;
+        border:2px solid #E196B5;
+    }
+
+    .nav-mobile {
+        display: none;
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+        text-align: right;
+        padding: 0 5px 5px 0;
+        border:2px solid #E196B5;
+        margin-top: 0;
+    }
+
+    .nav-mobile a{
+        text-decoration: none;
+        color: #877EAF;
+        font-size: 15px;
+    }
+
+    .nav-mobile li{
+        list-style-type: none;
+    }
+
+    .navbar .navigation-header .nav-item {
+        display: none;
+    }
+
+    .card-biodata {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    table.biodata td.cell1,.cell2, .cell3 {
+        width: 100px;
+    }
+
+    table.live-concert th {
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    table.live-concert td {
+        padding: 2px 5px 2px 5px;
+        font-size: 10px;
+    }
+
+    table.live-concert td.ticket:hover {
+        color: #f0efe8;
+        background-color: #E196B5;
+    }
+}
